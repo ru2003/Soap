@@ -1,0 +1,427 @@
+
+
+
+
+
+
+
+.section-p1 {
+    padding: 40px 80px;/*niche ke features ko padding di hai header part se*/
+}
+
+.section-m1{
+    margin;40px 0;/*margin 40 px from top and bottom and 0 px from left and right*/
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(243, 243, 243);
+    background-color: rgb(157, 162, 115);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(255, 246, 246);
+    background-color:transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 80px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.10);
+    background-color:rgb(254, 254, 255);
+    z-index: 999;
+    position: sticky;/*navbar sticky banana hota hai taki scroll krne ke bad bhi woh whi rhe */
+    top:0;
+    left:0;/*isse jab bhi website scroll bhi ki jayegi tabhi navbar constant upper position pe rahega*/
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;/*0 mtlb up down 0 and left right it is 20px*/
+}
+#navbar li a{
+    text-decoration:none;/*mtlb jo underline ata hai woh nikal jata hai*/
+    font-size: 16px;
+    font-weight: 600;
+    color:darkslategrey;/*yha pe anchor tag ko edit krte hai mtlb jo anchor tag ke bich me likha gya hai usse tag krte hai*/
+    transition: 0.3 ease; /*after clicking hover smooth hona chaiye*/  
+
+}
+/*hoover effect==mtlb after clicking color change hoke kya ayega wo*/
+#navbar li a:hover,
+#navbar li a.active{/*jis anchor ko specific  design krna hota hai uske liye */
+
+    color:rgb(25, 107, 20);
+}
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:rgb(18, 43, 101) ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#hero {
+    background-image: url("herbal13.jpg" );
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding:0 80px;
+    display: flex;/*jab default flex ho to ,column flex apply krna padta hai */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+   padding-bottom: 15px;
+}
+#hero h1{
+    color:rgb(16, 74, 40);
+}
+#hero button{
+    background-image: ;
+    background-color: transparent;
+    color: rgb(21, 34, 34);
+    border:0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size:15px;
+
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;/*top bottom se 25 px and left right se 15px*/
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid rgb(92, 139, 116);
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62,221, 0.1);
+   
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h4 {
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(5, 73, 56);
+    background-color: rgb(123, 152, 118);
+}
+#feature .fe-box:nth-child(2) h4{
+    background-color: rgb(219, 169, 146);
+}
+#feature .fe-box:nth-child(3) h4{
+    background-color: rgb(226, 226, 150);
+}
+#feature .fe-box:nth-child(4) h4{
+    background-color: rgb(173, 153, 192);
+}
+#feature .fe-box:nth-child(5) h4{
+    background-color: rgba(45, 29, 65, 0.14);
+}/*idhr parent and child use ki hai 2nd number mtlb yha 2nd child*/
+
+#product1{
+    text-align:center;
+
+}
+#product1 .pro-container  {
+    display:flex;
+    justify-content:content ;
+    padding-top:20px ;
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-wrap: wrap;/*jab sare product ek single line me nhi chiaye ho*/
+    
+}
+
+
+
+
+
+#product1 .pro{
+    width:23%;
+    min-width:250px ;
+    padding:10px 12px;
+    border:1px solid rgb(212, 205, 205);
+    border-radius: 25px;
+    cursor:pointer ;
+    box-shadow:20px 20px 30px rgba(0,0,0,0.2);
+    margin:15px 0;/*margin top bottom se 15 px and left right side se 0*/ 
+   transition: 0.2 ease;
+   
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+#product1 .pro .des{
+    text-align:start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: rgb(122, 109, 94);
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color:black;
+    font-size: 14px;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(59, 133, 110);
+}
+#product1 .pro .cart{
+    width: 80px;
+    height: 80px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: rgb(209, 234, 174);
+    font-weight: 500;
+    color: rgb(19, 83, 64);
+    border: 1px solid ;
+   
+
+}
+/*jaise jaise niche ke section me jate hai waise waise use design kiya jata hai in a order only*/ 
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("soapbar.jpg");/*jab image ko decorate krna hota hai tab usse index .html me rakhte hai n jab usse sirf dalna hota hai tab css ke folder me dalte hai samja*/
+    background-size: cover;
+    width: 100%;
+    height:40vh;
+    background-position: center;
+}
+#banner h4{
+    color: black;
+    font-size: 20px;
+    
+}
+
+#banner h2{
+    color:dark brown;
+    font-size: 30px;
+    padding: 10px 0;
+
+}
+#banner h2 span{
+    color:dark rgb(117, 143, 112);
+   
+
+}
+
+#banner button:hover{
+    background:rgb(10, 72, 10) ;
+    color:white;
+
+}
+
+#sm-banner{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-image: url("female2.jpeg");/*jab image ko decorate krna hota hai tab usse index .html me rakhte hai n jab usse sirf dalna hota hai tab css ke folder me dalte hai samja*/
+    background-size: cover;
+    min-width:580px;
+    height: 50vh;
+    background-position: center;
+    padding: 30px;
+
+}
+
+ #sm-banner .banner-box-2{
+    background-image: url("student.jpeg");
+ }
+
+
+
+#sm-banner h4{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background: rgb(174, 172, 172);
+    border:1px solid dark rgb(84, 81, 81);
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   /* background-image:url("green.jpeg") ;*/
+    background-repeat: no-repeat;
+   background-position: 50% 50%;/*background position will be 20% from top and 30% from left 0right*/
+   background-color: rgb(154, 188, 159);
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color:rgb(59, 156, 87);
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color:rgb(235, 239, 255);
+}
+#newsletter p span{
+    color:rgb(192, 133, 164);
+}
+
+#newsletter .form{
+    display: flex;
+    width: 405;
+}
+#newsletter input{
+    height:2.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border:1px solid transparent;
+    border-radius:4px;
+    outline:none;
+    border-top-right-radius: 0;/*uss side se koi bhi radius nhi rehti woh pura box join jaise lagta hai becoz of this*/
+    border-bottom-right-radius:0 ;
+}
+
+#newsletter  button{
+    background-color:rgb(35, 74, 41) ;
+    height:2.125rem;
+    text-align: center;
+    color:black;
+    white-space: nowrap;
+    border-top-left-radius: 0;/*uss side se koi bhi radius nhi rehti woh pura box join jaise lagta hai becoz of this*/
+    border-bottom-left-radius:0 ;
+}
+
+footer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}/*isse footer ke sare element ek row me ajayenge */
+
+footer .col{/*this col is  a class therefore put a dot to make it functional*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+
+}
+
+footer a{/* isse sare anchor tag walon me change aagya*/
+    font-size: 13px;
+    text-decoration: none;
+    color: blueviolet;
+    margin: 0 0 8px 0;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}/*bcz of this only the text will align 
+
+
+
